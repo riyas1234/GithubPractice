@@ -37,9 +37,9 @@ public class GithubPractice{
 
 	public static ArrayList <Integer> removeDuplicates (ArrayList <Integer> a){
 		for (int i = 0; i < a.size(); i ++){
-			for (int j = i; j < a.size(); j ++){
+			for (int j = i+1; j < a.size(); j ++){
 				if (a.get(i)==a.get(j)){
-					a.remove(i);
+					a.remove(j);
 				}
 			}
 		}
